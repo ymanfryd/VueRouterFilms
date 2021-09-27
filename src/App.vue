@@ -10,6 +10,10 @@
     <hr>
     <UserForm />
     <hr>
+    <SignUp />
+    <hr>
+    <UserPage />
+    <hr>
   </div>
 </template>
 
@@ -19,6 +23,8 @@ import Names from "./components/Names";
 import PhotoRedactor from "./components/PhotoRedactor";
 import ProductList from "@/components/ProductList";
 import UserForm from "./components/UserForm";
+import SignUp from "./components/SignUp";
+import UserPage from "./components/UserPage";
 
 export default {
   name: 'App',
@@ -27,7 +33,9 @@ export default {
     Names,
     PhotoRedactor,
     ProductList,
-    UserForm
+    UserForm,
+    SignUp,
+    UserPage
   }
 }
 </script>
@@ -38,7 +46,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 60px;
 }
 
 li {

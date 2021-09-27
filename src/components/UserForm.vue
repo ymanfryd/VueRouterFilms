@@ -1,5 +1,5 @@
 <template>
-  <div class="user-from">
+  <div class="user-form">
     <div class="flex">
       <div class="form-fields">
         <h2>Информация о себе:</h2>
@@ -67,7 +67,6 @@ export default {
 </script>
 
 <style scoped>
-
 input {
   width: 400px;
 }
@@ -75,4 +74,6 @@ input {
   margin-right: 50px;
   margin-bottom: 50px;
 }
+
+
 </style>
