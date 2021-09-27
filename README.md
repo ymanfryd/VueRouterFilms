@@ -1,4 +1,4 @@
-# initial3
+# initial
 
 ## Project setup
 ```

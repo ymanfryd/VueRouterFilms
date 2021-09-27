@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyComponent />
+    <hr>
+    <Names />
+    <hr>
+    <PhotoRedactor />
+    <hr>
+    <ProductList />
+    <hr>
+    <UserForm />
+    <hr>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyComponent from "./components/MyComponent";
+import Names from "./components/Names";
+import PhotoRedactor from "./components/PhotoRedactor";
+import ProductList from "@/components/ProductList";
+import UserForm from "./components/UserForm";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MyComponent,
+    Names,
+    PhotoRedactor,
+    ProductList,
+    UserForm
   }
 }
 </script>
@@ -21,8 +37,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+li {
+  list-style: none;
 }
 </style>
