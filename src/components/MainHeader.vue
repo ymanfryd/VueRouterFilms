@@ -13,9 +13,6 @@
         >
           Фильмы
         </router-link>
-        <div class="links">
-          <a href="https://www.youtube.com/watch?v=rqB7jRunukw">Урок</a>
-        </div>
         <button
           type="button"
           class="btn btn-outline-light btn-lg"

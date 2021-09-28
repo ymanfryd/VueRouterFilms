@@ -3,11 +3,6 @@
     <h1>
       Ничего не найдено
     </h1>
-    <router-link
-        :to="{ name: 'films' }"
-    >
-      <p>Фильмы</p>
-    </router-link>
   </div>
 </template>
 
@@ -22,12 +17,6 @@
       color: #ffffff;
       font-size: 70px;
       margin-bottom: 20px;
-    }
-    p {
-      text-decoration: none;
-      font-weight: 700;
-      color: #ffffff;
-      font-size: 25px;
     }
   }
 </style>
