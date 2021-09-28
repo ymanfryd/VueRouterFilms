@@ -7,7 +7,6 @@ export default {
             const container = event.target
             if (container.clientHeight + container.scrollTop >= container.scrollHeight - 1) {
                 this.onScrollEnd()
-                // this.isRulesReaded = true
             }
         }
     }

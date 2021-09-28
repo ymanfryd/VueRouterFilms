@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
     <MyComponent />
     <hr>
     <Names />
@@ -14,6 +15,8 @@
     <hr>
     <UserPage />
     <hr>
+    <TextEditor />
+    <hr>
   </div>
 </template>
 
@@ -25,6 +28,8 @@ import ProductList from "@/components/ProductList";
 import UserForm from "./components/UserForm";
 import SignUp from "./components/SignUp";
 import UserPage from "./components/UserPage";
+import TextEditor from "./components/TextEditor";
+
 
 export default {
   name: 'App',
@@ -35,7 +40,8 @@ export default {
     ProductList,
     UserForm,
     SignUp,
-    UserPage
+    UserPage,
+    TextEditor
   }
 }
 </script>
@@ -49,7 +55,16 @@ export default {
   margin: 60px;
 }
 
-li {
-  list-style: none;
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>

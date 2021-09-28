@@ -23,8 +23,8 @@
       </button>
       <button
           type="button"
-          :class="imgFilters.border ? 'active' : ''"
-          @click="imgFilters.border = !imgFilters.border"
+          :class="imgFilters.bordered ? 'active' : ''"
+          @click="imgFilters.bordered = !imgFilters.bordered"
       >
         Рамка
       </button>
@@ -35,7 +35,19 @@
       >
         Тень
       </button>
-      <br>
+
+      <button v-if="isCatVisible"
+              @click="isCatVisible = !isCatVisible"
+        >
+        Спрятать
+      </button>
+      <button v-else
+              @click="isCatVisible = !isCatVisible"
+      >
+        Показать
+      </button>
+      </div>
+      <div class="options">
       <h2>Размер</h2>
       <label>
         Ширина: {{imgSizes.currentWidth}}
@@ -69,22 +81,14 @@
             :max="imgRotate.maxAngle"
         >
       </label>
+      </div>
     </div>
 
 
-    <button v-if="isCatVisible"
-            @click="isCatVisible = !isCatVisible"
-    >
-      Спрятать
-    </button>
-    <button v-else
-            @click="isCatVisible = !isCatVisible"
-    >
-      Показать
-    </button>
+
 
   </div>
-</div>
+
 </template>
 
 <script>
@@ -95,7 +99,7 @@ name: "PhotoRedactor",
       isCatVisible: true,
       imgFilters: {
         sepia: false,
-        border: false,
+        bordered: false,
         shadow: false
       },
       imgSizes: {
@@ -145,7 +149,7 @@ img {
 img.sepia {
     filter: sepia(100%);
   }
-img.border {
+img.bordered {
     border: 5px dashed #464646
   }
 img.shadow {
@@ -155,6 +159,7 @@ img.shadow {
 
 button {
   margin-right: 10px;
+  height: 30px;
 }
 button.active {
     background-color: #dbdbdb;

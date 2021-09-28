@@ -45,7 +45,6 @@
 </template>
 
 <script>
-import scrollHandler from "../mixins/scrollHandler";
 
 export default {
   props: {
@@ -54,7 +53,7 @@ export default {
       default: ''
     }
   },
-  mixins: [scrollHandler],
+
   data() {
     return {
       isRulesReaded: false
@@ -62,6 +61,9 @@ export default {
   },
   beforeCreate() {
     console.log('beforeCreate')
+  },
+  created() {
+    this.$log()
   },
   methods: {
     closeModal() {

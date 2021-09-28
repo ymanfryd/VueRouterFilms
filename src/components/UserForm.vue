@@ -75,5 +75,9 @@ input {
   margin-bottom: 50px;
 }
 
+button {
+  margin-top: 30px;
+}
+
 
 </style>
